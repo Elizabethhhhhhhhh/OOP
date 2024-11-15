@@ -1,19 +1,13 @@
-public class Student extends Person {
-    private String program;
-    private int year;
+public class Main {
+    public static void main(String[] args) {
+        // Create a Student object
+        Student student = new Student("Elizabeth", " Balayan Batangas PH", "BSIT", 2);
+        System.out.println(student.toString());
 
-    public Student(String name, String address, String program, int year) {
-        super(name, address);
-        this.program = program;
-        this.year = year;
-    }
+        System.out.println("\n----------------------------------\n");
 
-    @Override
-    public String toString() {
-        return "Student Name: " + name + "\n" +
-               "Student Address: " + address + "\n" +
-               "Student Program: " + program + "\n" +
-               "Student Year: " + year + "\n\n" +
-               super.toString() + " I am " + year + " year of " + program + ".";
+        // Create a Staff object
+        Staff staff = new Staff("Cresmarie", "Manila PH", "IT");
+        System.out.println(staff.toString());
     }
 }
